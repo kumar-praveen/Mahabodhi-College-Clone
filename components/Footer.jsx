@@ -29,7 +29,7 @@ function Footer() {
           <h2 className="text-white text-2xl font-bold">Quick Links</h2> <hr />
           <ul className="flex flex-col gap-3 text-gray-400 list-disc">
             <li>
-              <Link href={"#"}>Home</Link>
+              <Link href={"/"}>Home</Link>
             </li>
             <li>
               <Link href={"#"}>About</Link>

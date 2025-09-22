@@ -49,17 +49,43 @@ export default function Navbar() {
                     <BookMinusIcon className="text-primary" /> Mahabodhi Paper
                     Presentation
                   </li>
-                  <li className="flex gap-2 font-semibold cursor-pointer hover:text-primary">
-                    <BookMinusIcon className="text-primary" /> Principal
+
+                  <li>
+                    <Link
+                      href="/principal"
+                      className="flex gap-2 items-center font-bold"
+                    >
+                      <BookMinusIcon className="text-primary" />
+                      <span className="hover:text-primary">Principal</span>
+                    </Link>
                   </li>
-                  <li className="flex gap-2 font-semibold cursor-pointer hover:text-primary">
-                    <BookMinusIcon className="text-primary" /> Secretary
+
+                  <li>
+                    <Link
+                      href="/secretary"
+                      className="flex gap-2 items-center font-bold"
+                    >
+                      <BookMinusIcon className="text-primary" />
+                      <span className="hover:text-primary">Secretary</span>
+                    </Link>
                   </li>
-                  <li className="flex gap-2 font-semibold cursor-pointer hover:text-primary">
-                    <BookMinusIcon className="text-primary" /> President
+                  <li>
+                    <Link
+                      href="/president"
+                      className="flex gap-2 items-center font-bold"
+                    >
+                      <BookMinusIcon className="text-primary" />
+                      <span className="hover:text-primary">President</span>
+                    </Link>
                   </li>
-                  <li className="flex gap-2 font-semibold cursor-pointer hover:text-primary">
-                    <BookMinusIcon className="text-primary" /> Our Mission
+                  <li>
+                    <Link
+                      href="/mission-and-vision"
+                      className="flex gap-2 items-center font-bold"
+                    >
+                      <BookMinusIcon className="text-primary" />
+                      <span className="hover:text-primary">Our Mission</span>
+                    </Link>
                   </li>
                   <li className="flex gap-2 font-semibold cursor-pointer hover:text-primary">
                     <BookMinusIcon className="text-primary" /> Bank Detail
@@ -87,8 +113,14 @@ export default function Navbar() {
                   <li className="flex gap-2 font-semibold cursor-pointer hover:text-primary">
                     <BookMinusIcon className="text-primary" /> Course
                   </li>
-                  <li className="flex gap-2 font-semibold cursor-pointer hover:text-primary">
-                    <BookMinusIcon className="text-primary" /> Scholorship
+                  <li>
+                    <Link
+                      href="/scholarship"
+                      className="flex gap-2 items-center font-bold"
+                    >
+                      <BookMinusIcon className="text-primary" />
+                      <span className="hover:text-primary">Scholarship</span>
+                    </Link>
                   </li>
                   <li className="flex gap-2 font-semibold cursor-pointer hover:text-primary">
                     <BookMinusIcon className="text-primary" /> Facilities
@@ -102,8 +134,14 @@ export default function Navbar() {
               </HoverCardTrigger>
               <HoverCardContent className={"min-w-max"}>
                 <ul className="flex flex-col gap-2">
-                  <li className="flex gap-2 font-semibold cursor-pointer hover:text-primary">
-                    <BookMinusIcon className="text-primary" /> Teaching Staff
+                  <li>
+                    <Link
+                      href="/teaching-staff"
+                      className="flex gap-2 items-center font-bold"
+                    >
+                      <BookMinusIcon className="text-primary" />
+                      <span className="hover:text-primary">Teaching Staff</span>
+                    </Link>
                   </li>
                   <li className="flex gap-2 font-semibold cursor-pointer hover:text-primary">
                     <BookMinusIcon className="text-primary" /> Non-Teaching
@@ -119,7 +157,7 @@ export default function Navbar() {
             <Link href={"#"} className="hover:text-primary">
               GALLERY
             </Link>
-            <Link href={"#"} className="hover:text-primary">
+            <Link href={"/contact"} className="hover:text-primary">
               CONTACT
             </Link>
             <Link
@@ -168,8 +206,14 @@ export default function Navbar() {
                         <BookMinusIcon className="text-primary" /> Mahabodhi
                         Paper Presentation
                       </li>
-                      <li className="flex gap-2 font-semibold cursor-pointer hover:text-primary">
-                        <BookMinusIcon className="text-primary" /> Principal
+                      <li>
+                        <Link
+                          href="/principal"
+                          className="flex gap-2 items-center hover:text-primary"
+                        >
+                          <BookMinusIcon className="text-primary" />
+                          <span>Principal</span>
+                        </Link>
                       </li>
                       <li className="flex gap-2 font-semibold cursor-pointer hover:text-primary">
                         <BookMinusIcon className="text-primary" /> Secretary
@@ -209,8 +253,16 @@ export default function Navbar() {
                       <li className="flex gap-2 font-semibold cursor-pointer hover:text-primary">
                         <BookMinusIcon className="text-primary" /> Course
                       </li>
-                      <li className="flex gap-2 font-semibold cursor-pointer hover:text-primary">
-                        <BookMinusIcon className="text-primary" /> Scholarship
+                      <li>
+                        <Link
+                          href="/scholarship"
+                          className="flex gap-2 items-center font-bold"
+                        >
+                          <BookMinusIcon className="text-primary" />
+                          <span className="hover:text-primary">
+                            Scholarship
+                          </span>
+                        </Link>
                       </li>
                       <li className="flex gap-2 font-semibold cursor-pointer hover:text-primary">
                         <BookMinusIcon className="text-primary" /> Facilities
@@ -224,9 +276,16 @@ export default function Navbar() {
                   </HoverCardTrigger>
                   <HoverCardContent className="min-w-max">
                     <ul className="flex flex-col gap-2">
-                      <li className="flex gap-2 font-semibold cursor-pointer hover:text-primary">
-                        <BookMinusIcon className="text-primary" /> Teaching
-                        Staff
+                      <li>
+                        <Link
+                          href="/teaching-staff"
+                          className="flex gap-2 items-center font-bold"
+                        >
+                          <BookMinusIcon className="text-primary" />
+                          <span className="hover:text-primary">
+                            Teaching Staff
+                          </span>
+                        </Link>
                       </li>
                       <li className="flex gap-2 font-semibold cursor-pointer hover:text-primary">
                         <BookMinusIcon className="text-primary" /> Non-Teaching
@@ -243,7 +302,7 @@ export default function Navbar() {
                   GALLERY
                 </Link>
                 <Link
-                  href={"#"}
+                  href={"/contact"}
                   className="hover:text-primary bg-gray-200 w-full p-2"
                 >
                   CONTACT

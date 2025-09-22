@@ -11,6 +11,28 @@ body {
   }
 }
 
+.scholarship {
+  animation: float 15s linear 2s infinite alternate;
+  will-change: transform;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  25% {
+    transform: translateY(40px);
+  }
+  50% {
+    transform: translateY(0px);
+  }
+  75% {
+    transform: translateY(-40px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
 
 @custom-variant dark (&:is(.dark *));
 
